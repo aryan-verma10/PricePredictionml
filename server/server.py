@@ -32,4 +32,4 @@ def predict_home_price():
 if __name__ == '__main__':
     print("Starting Python flask server for Home price prediction")
     CORS(app)
-    app.run()
+    app.run(debug = False, host='0.0.0.0')  # this makes website visibel publicaly
